@@ -20,3 +20,6 @@ Original idea is [sindresorhus](https://github.com/sindresorhus/sindresorhus)
 $ npx ryu-sato
 ```
 
+# Lisence
+
+MIT © Ryu Sato
