@@ -1,7 +1,7 @@
 # What is this
 
 CLI program to know my profile.
-It is descibed by npm.
+It is descibed by Node.js.
 
 Original idea is [sindresorhus](https://github.com/sindresorhus/sindresorhus)
 
