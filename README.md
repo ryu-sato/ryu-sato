@@ -1,4 +1,7 @@
-# My Profile
+# What is this
+
+CLI program to know my profile.
+It is descibed by npm.
 
 Original idea is [sindresorhus](https://github.com/sindresorhus/sindresorhus)
 
