@@ -1,4 +1,4 @@
-![circleci status](https://circleci.com/gh/:owner/:repo.svg?style=shield&circle-token=:circle-token)
+[![CircleCI status](https://circleci.com/gh/ryu-sato/ryu-sato/tree/master.svg?style=shield)](https://circleci.com/gh/ryu-sato/ryu-sato/tree/master)
 
 # What is this
 
@@ -21,6 +21,11 @@ Original idea is [sindresorhus](https://github.com/sindresorhus/sindresorhus)
 ```
 $ npx ryu-sato
 ```
+
+# Todo
+
+- [ ] create test
+- [ ] exec test before publish in circleci 
 
 # Lisence
 
