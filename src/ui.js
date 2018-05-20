@@ -31,6 +31,10 @@ const items = [
     url: 'https://weseek.co.jp/',
   },
   {
+    label: 'Growi',
+    url: 'https://growi.org/',
+  },
+  {
     label: 'SEROKU',
     url: 'https://seroku.jp/',
   },

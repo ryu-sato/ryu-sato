@@ -1,6 +1,6 @@
 {
   "name": "ryu-sato",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "CLI program to know my profile. It is descibed by npm.",
   "bin": {
     "ryu-sato": "src/cli.js"
