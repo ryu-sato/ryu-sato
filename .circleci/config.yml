@@ -36,6 +36,7 @@ workflows:
           # execute `publish` tagged commit only. (Tag format like `v0.1.1`)
           filters:
             # ignore all branch because circleci defaultly will run the job for all branches if neither "only" nor "ignore" are specified.
+            #   ref. https://qiita.com/sawadashota/items/ba89382d563bc90bb5cd
             branches:
               ignore: /.*/
             tags:
