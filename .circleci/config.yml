@@ -3,8 +3,20 @@
 # Check https://circleci.com/docs/2.0/language-javascript/ for more details
 #
 version: 2
+workflows:
+  version: 2
+  tagged-build:
+    jobs:
+      - publish:
+          # execute `publish` tagged commit only. (Tag format like `v0.1.1`)
+          filters:
+            tags:
+              only: /v[0-9]+(\.[0-9]+)*/
+
+# Jobs to execute when commit was pushed to repository
 jobs:
-  build:
+  # To publish Node.js package
+  publish:
     docker:
       # specify the version you desire here
       - image: circleci/node:8
@@ -22,4 +34,6 @@ jobs:
       # [TODO] run tests!
       #- run: yarn test
 
+      # Login using token
+      - run: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
       - run: npm publish
