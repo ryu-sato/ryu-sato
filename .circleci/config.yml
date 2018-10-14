@@ -25,12 +25,15 @@ jobs:
 
 workflows:
   version: 2
+
+  # execute `build` all branches.
+  build:
+    jobs:
+      - build
+
+  # execute `publish` tagged commit only. (Tag format like `v0.1.1`)
   publish:
     jobs:
-      # execute `build` all branches.
-      - build:
-
-      # execute `publish` tagged commit only. (Tag format like `v0.1.1`)
       - publish:
         filters:
           # ignore all branch because circleci defaultly will run the job for all branches if neither "only" nor "ignore" are specified.
